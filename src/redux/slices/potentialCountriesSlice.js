@@ -2,7 +2,7 @@ import {createSlice} from "@reduxjs/toolkit"
 
 export const potentialCoutriesSlice = createSlice({
     name: "potentialCountries",
-    initialState: {value: {name: [{common: "America"}]}},
+    initialState: {value: [ {name: {common: "America"}}]},
     reducers: {
         setPotentialCountries: (state, action) => {
             state.value = action.payload
